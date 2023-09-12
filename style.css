@@ -1,21 +1,26 @@
-/* Reset dei margini e dei padding per il corpo del documento */
 body {
     margin: 0;
     padding: 0;
     font-family: 'Arial', sans-serif;
-    background-color: #0e0e0e; /* Colore di sfondo nero */
-    color: #ffffff; /* Colore del testo bianco */
+    background-color: #0e0e0e; 
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
 }
 
-/* Stile dell'header */
 header {
-    background-image: url('header.png'); /* Immagine di sfondo per l'header */
+    background-image: url('header.png');
     background-size: cover;
     padding: 20px;
     text-align: center;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-/* Stile della navigazione */
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -29,12 +34,12 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #ffffff; /* Colore del testo bianco */
+    color: #ffffff;
     font-weight: bold;
     font-size: 18px;
     transition: color 0.3s;
 }
 
 nav ul li a:hover {
-    color: #ffcc00; /* Cambia il colore del testo al passaggio del mouse */
+    color: #ffcc00;
 }
